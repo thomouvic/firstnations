@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a9bcb7792f4c3ab9218269019c3a67a1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a9bcb7792f4c3ab9218269019c3a67a1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a9bcb7792f4c3ab9218269019c3a67a1 = L.map(
+                "map_a9bcb7792f4c3ab9218269019c3a67a1",
+                {
+                    center: [48.45, -123.4],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7d61b166c7900585501bea883330c870 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a9bcb7792f4c3ab9218269019c3a67a1);
+        
+    
+            var marker_cluster_006393d88ab83e0d544c2dd39a2be71e = L.markerClusterGroup(
+                {}
+            );
+            map_a9bcb7792f4c3ab9218269019c3a67a1.addLayer(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+            var marker_27676e51dd131d28b56bea6cd4ed396b = L.marker(
+                [48.4284, -123.3656],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_e91d2a1407cbd86a839040425e932e67 = L.popup({"maxWidth": 300});
+
+        
+            var html_dddb49161f63568d2e7ebb5c9205e26a = $(`<div id="html_dddb49161f63568d2e7ebb5c9205e26a" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Lekwungen (Victoria)</b><br>         <i>Lekwungen greeting & history (City of Victoria doc)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Lekwungen%20(Victoria)%20(48.4284,%20-123.3656)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_e91d2a1407cbd86a839040425e932e67.setContent(html_dddb49161f63568d2e7ebb5c9205e26a);
+        
+
+        marker_27676e51dd131d28b56bea6cd4ed396b.bindPopup(popup_e91d2a1407cbd86a839040425e932e67)
+        ;
+
+        
+    
+    
+            var marker_a420cd37c7ff8356db736e24f7866707 = L.marker(
+                [48.6304, -123.4264],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_dcb08ef102c59876b6f571e65be6f69c = L.popup({"maxWidth": 300});
+
+        
+            var html_d499a190b4039624984add54d45e43ff = $(`<div id="html_d499a190b4039624984add54d45e43ff" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>W̱SÁNEĆ (Saanich)</b><br>         <i>W̱SÁNEĆ reef net fishing story (FirstVoices)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20W̱SÁNEĆ%20(Saanich)%20(48.6304,%20-123.4264)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_dcb08ef102c59876b6f571e65be6f69c.setContent(html_d499a190b4039624984add54d45e43ff);
+        
+
+        marker_a420cd37c7ff8356db736e24f7866707.bindPopup(popup_dcb08ef102c59876b6f571e65be6f69c)
+        ;
+
+        
+    
+    
+            var marker_f5e177a289f05a1f68df1fab99bf36c5 = L.marker(
+                [48.4252, -123.3887],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_efd9a362ca8f8e9f1171131ee049119a = L.popup({"maxWidth": 300});
+
+        
+            var html_cb12e1fb4133a24ae6febd6cd266ccbc = $(`<div id="html_cb12e1fb4133a24ae6febd6cd266ccbc" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Songhees Point</b><br>         <i>Known site of spiritual practices (Lekwungen tradition)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Songhees%20Point%20(48.4252,%20-123.3887)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_efd9a362ca8f8e9f1171131ee049119a.setContent(html_cb12e1fb4133a24ae6febd6cd266ccbc);
+        
+
+        marker_f5e177a289f05a1f68df1fab99bf36c5.bindPopup(popup_efd9a362ca8f8e9f1171131ee049119a)
+        ;
+
+        
+    
+    
+            var marker_66849164149261da6f9f7b1fca368161 = L.marker(
+                [48.4128, -123.3605],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_ad6b983cb96fabeaaf9b06769595945c = L.popup({"maxWidth": 300});
+
+        
+            var html_4b39693685afcc26dada4c4c746b8950 = $(`<div id="html_4b39693685afcc26dada4c4c746b8950" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Beacon Hill</b><br>         <i>Gathering site for stories and ceremony (oral history)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Beacon%20Hill%20(48.4128,%20-123.3605)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_ad6b983cb96fabeaaf9b06769595945c.setContent(html_4b39693685afcc26dada4c4c746b8950);
+        
+
+        marker_66849164149261da6f9f7b1fca368161.bindPopup(popup_ad6b983cb96fabeaaf9b06769595945c)
+        ;
+
+        
+    
+    
+            var marker_b44e486f6a3e386f1d1bd7866015330f = L.marker(
+                [48.4931, -123.3374],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_fba5537e76fcb707bac337ec4b10152f = L.popup({"maxWidth": 300});
+
+        
+            var html_c3ed4642f0570a136e12d68f764f5fd3 = $(`<div id="html_c3ed4642f0570a136e12d68f764f5fd3" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Mount Douglas (PKOLS)</b><br>         <i>Sacred mountain known as PKOLS (W̱SÁNEĆ oral tradition)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Mount%20Douglas%20(PKOLS)%20(48.4931,%20-123.3374)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_fba5537e76fcb707bac337ec4b10152f.setContent(html_c3ed4642f0570a136e12d68f764f5fd3);
+        
+
+        marker_b44e486f6a3e386f1d1bd7866015330f.bindPopup(popup_fba5537e76fcb707bac337ec4b10152f)
+        ;
+
+        
+    
+    
+            var marker_000323fe316d62db80124b4d5e01993b = L.marker(
+                [48.415, -123.3383],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_250b728227e93bfbbee8960a310a5994 = L.popup({"maxWidth": 300});
+
+        
+            var html_11c0a5d838cdac4e515caa85fe153f1d = $(`<div id="html_11c0a5d838cdac4e515caa85fe153f1d" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Gonzales Hill</b><br>         <i>Viewpoint with territorial significance (Elder testimony)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Gonzales%20Hill%20(48.415,%20-123.3383)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_250b728227e93bfbbee8960a310a5994.setContent(html_11c0a5d838cdac4e515caa85fe153f1d);
+        
+
+        marker_000323fe316d62db80124b4d5e01993b.bindPopup(popup_250b728227e93bfbbee8960a310a5994)
+        ;
+
+        
+    
+    
+            var marker_1d56cab559da858f68c3e4585483bae2 = L.marker(
+                [48.455, -123.414],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_302e7bf9e88b570d8a3dccfd352e9c1a = L.popup({"maxWidth": 300});
+
+        
+            var html_06564503ff7c9046ebaf5fa344729f6f = $(`<div id="html_06564503ff7c9046ebaf5fa344729f6f" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Craigflower Creek</b><br>         <i>Traditional salmon-bearing stream (Lekwungen knowledge)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Craigflower%20Creek%20(48.455,%20-123.414)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_302e7bf9e88b570d8a3dccfd352e9c1a.setContent(html_06564503ff7c9046ebaf5fa344729f6f);
+        
+
+        marker_1d56cab559da858f68c3e4585483bae2.bindPopup(popup_302e7bf9e88b570d8a3dccfd352e9c1a)
+        ;
+
+        
+    
+    
+            var marker_1c379ac9e1316adfb451a6fd3c30acc8 = L.marker(
+                [48.4055, -123.3408],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_de858280cccab537154d9b23ab0eebdc = L.popup({"maxWidth": 300});
+
+        
+            var html_e2b0afb73f09ec438cf642fc60a583d8 = $(`<div id="html_e2b0afb73f09ec438cf642fc60a583d8" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Clover Point</b><br>         <i>Used for seasonal gatherings and seaweed collection</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Clover%20Point%20(48.4055,%20-123.3408)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_de858280cccab537154d9b23ab0eebdc.setContent(html_e2b0afb73f09ec438cf642fc60a583d8);
+        
+
+        marker_1c379ac9e1316adfb451a6fd3c30acc8.bindPopup(popup_de858280cccab537154d9b23ab0eebdc)
+        ;
+
+        
+    
+    
+            var marker_b3f1320e853dc651b68ae9e6b41cd96e = L.marker(
+                [48.4477, -123.2961],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_9ded6e0f1b0de0a245deb51fd3466288 = L.popup({"maxWidth": 300});
+
+        
+            var html_5d3c26885c4684c6eeab20194cd5e14e = $(`<div id="html_5d3c26885c4684c6eeab20194cd5e14e" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Cattle Point</b><br>         <i>Fishing and teaching location (Elder oral history)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Cattle%20Point%20(48.4477,%20-123.2961)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_9ded6e0f1b0de0a245deb51fd3466288.setContent(html_5d3c26885c4684c6eeab20194cd5e14e);
+        
+
+        marker_b3f1320e853dc651b68ae9e6b41cd96e.bindPopup(popup_9ded6e0f1b0de0a245deb51fd3466288)
+        ;
+
+        
+    
+    
+            var marker_96a588b0a7d4de279957e101952abca1 = L.marker(
+                [48.425, -123.4075],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_e00299b4d81447a609beb5c48f3a83f0 = L.popup({"maxWidth": 300});
+
+        
+            var html_ba11bba913716e68821533d181be915a = $(`<div id="html_ba11bba913716e68821533d181be915a" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>MacAulay Point</b><br>         <i>Historic village and defense site (Songhees records)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20MacAulay%20Point%20(48.425,%20-123.4075)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_e00299b4d81447a609beb5c48f3a83f0.setContent(html_ba11bba913716e68821533d181be915a);
+        
+
+        marker_96a588b0a7d4de279957e101952abca1.bindPopup(popup_e00299b4d81447a609beb5c48f3a83f0)
+        ;
+
+        
+    
+    
+            var marker_02a43baab2c1105d6d9bbf89d0d5f8c8 = L.marker(
+                [48.4525, -123.347],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_67b108c1113291c99a825d2d15d87d46 = L.popup({"maxWidth": 300});
+
+        
+            var html_d62be0e3bdaba1b3ad4783263d16cfee = $(`<div id="html_d62be0e3bdaba1b3ad4783263d16cfee" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Cedar Hill</b><br>         <i>Berry gathering and trail crossing area (story map)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Cedar%20Hill%20(48.4525,%20-123.347)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_67b108c1113291c99a825d2d15d87d46.setContent(html_d62be0e3bdaba1b3ad4783263d16cfee);
+        
+
+        marker_02a43baab2c1105d6d9bbf89d0d5f8c8.bindPopup(popup_67b108c1113291c99a825d2d15d87d46)
+        ;
+
+        
+    
+    
+            var marker_7ed0d1f19a1a2aca65c63d768fc6f1fe = L.marker(
+                [48.4355, -123.2915],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_93e6aa47e2069e8e27d78ea9dd84d847 = L.popup({"maxWidth": 300});
+
+        
+            var html_a8136347a133ad7af767f3e9d246cbb7 = $(`<div id="html_a8136347a133ad7af767f3e9d246cbb7" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Cadboro Bay</b><br>         <i>Landing and canoe site (oral testimony)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Cadboro%20Bay%20(48.4355,%20-123.2915)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_93e6aa47e2069e8e27d78ea9dd84d847.setContent(html_a8136347a133ad7af767f3e9d246cbb7);
+        
+
+        marker_7ed0d1f19a1a2aca65c63d768fc6f1fe.bindPopup(popup_93e6aa47e2069e8e27d78ea9dd84d847)
+        ;
+
+        
+    
+    
+            var marker_24335d629ec4bffb7d61dca737549d2c = L.marker(
+                [48.521, -123.4048],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_6b2e54164584a79f47db9e7859f7b322 = L.popup({"maxWidth": 300});
+
+        
+            var html_0da7bc67ee681a87336f113c53e81d5f = $(`<div id="html_0da7bc67ee681a87336f113c53e81d5f" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Elk Lake</b><br>         <i>Water source and seasonal camp (archival doc)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Elk%20Lake%20(48.521,%20-123.4048)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_6b2e54164584a79f47db9e7859f7b322.setContent(html_0da7bc67ee681a87336f113c53e81d5f);
+        
+
+        marker_24335d629ec4bffb7d61dca737549d2c.bindPopup(popup_6b2e54164584a79f47db9e7859f7b322)
+        ;
+
+        
+    
+    
+            var marker_8368176721a44100c20c4f48d9dee30a = L.marker(
+                [48.4745, -123.4726],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_5461229cb99a0ed2e435428ba3a3618d = L.popup({"maxWidth": 300});
+
+        
+            var html_c7c0874719f50a823cd2554a1cc9739f = $(`<div id="html_c7c0874719f50a823cd2554a1cc9739f" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Thetis Lake</b><br>         <i>Place of spiritual retreat and cleansing (oral account)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Thetis%20Lake%20(48.4745,%20-123.4726)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_5461229cb99a0ed2e435428ba3a3618d.setContent(html_c7c0874719f50a823cd2554a1cc9739f);
+        
+
+        marker_8368176721a44100c20c4f48d9dee30a.bindPopup(popup_5461229cb99a0ed2e435428ba3a3618d)
+        ;
+
+        
+    
+    
+            var marker_d41274bdbd7c591e545c01e8112e2ef1 = L.marker(
+                [48.4312, -123.3085],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_d5326ad1f715addc5e9699523676cee1 = L.popup({"maxWidth": 300});
+
+        
+            var html_ee36ee4629c2edb26bd1ea23999aeea3 = $(`<div id="html_ee36ee4629c2edb26bd1ea23999aeea3" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Willows Beach</b><br>         <i>Beach with shell midden and trade site (archaeology)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Willows%20Beach%20(48.4312,%20-123.3085)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_d5326ad1f715addc5e9699523676cee1.setContent(html_ee36ee4629c2edb26bd1ea23999aeea3);
+        
+
+        marker_d41274bdbd7c591e545c01e8112e2ef1.bindPopup(popup_d5326ad1f715addc5e9699523676cee1)
+        ;
+
+        
+    
+    
+            var marker_170b28650fdf974f5cf35b51e74f2d22 = L.marker(
+                [48.45, -123.3198],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_bcca73b79ad98ba2f21afff5a995cc28 = L.popup({"maxWidth": 300});
+
+        
+            var html_d7568d5b8f5d3ad713a5d73d3131d2a1 = $(`<div id="html_d7568d5b8f5d3ad713a5d73d3131d2a1" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Mount Tolmie</b><br>         <i>Hill used for observation and signal fires (tradition)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Mount%20Tolmie%20(48.45,%20-123.3198)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_bcca73b79ad98ba2f21afff5a995cc28.setContent(html_d7568d5b8f5d3ad713a5d73d3131d2a1);
+        
+
+        marker_170b28650fdf974f5cf35b51e74f2d22.bindPopup(popup_bcca73b79ad98ba2f21afff5a995cc28)
+        ;
+
+        
+    
+    
+            var marker_3d8931c62c1ac1f2729121f857e43ba1 = L.marker(
+                [48.4755, -123.4015],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_a2541d43d8ff99f90e6b2220bedf8a97 = L.popup({"maxWidth": 300});
+
+        
+            var html_0989b84b4619e37102c94181035ad1c2 = $(`<div id="html_0989b84b4619e37102c94181035ad1c2" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Colquitz River</b><br>         <i>River used for transport and food collection (records)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Colquitz%20River%20(48.4755,%20-123.4015)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_a2541d43d8ff99f90e6b2220bedf8a97.setContent(html_0989b84b4619e37102c94181035ad1c2);
+        
+
+        marker_3d8931c62c1ac1f2729121f857e43ba1.bindPopup(popup_a2541d43d8ff99f90e6b2220bedf8a97)
+        ;
+
+        
+    
+    
+            var marker_b6ef1e869a3cdabb6b571815432b04f1 = L.marker(
+                [48.4602, -123.3672],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_d84eda32c1386e3f34c62bbb3a21e092 = L.popup({"maxWidth": 300});
+
+        
+            var html_d2e6132e504e8c0187fed027fb7cac2d = $(`<div id="html_d2e6132e504e8c0187fed027fb7cac2d" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Swan Lake</b><br>         <i>Wetland teachings on water birds and medicines</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Swan%20Lake%20(48.4602,%20-123.3672)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_d84eda32c1386e3f34c62bbb3a21e092.setContent(html_d2e6132e504e8c0187fed027fb7cac2d);
+        
+
+        marker_b6ef1e869a3cdabb6b571815432b04f1.bindPopup(popup_d84eda32c1386e3f34c62bbb3a21e092)
+        ;
+
+        
+    
+    
+            var marker_f1b9ec17f7b555cbd4e6635e17924c02 = L.marker(
+                [48.4467, -123.3145],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_6615b52e5a32351e82c4cbf2171ca74d = L.popup({"maxWidth": 300});
+
+        
+            var html_ad05f1f54470fa1aed5b7e5d6e722cd8 = $(`<div id="html_ad05f1f54470fa1aed5b7e5d6e722cd8" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Lang Cove</b><br>         <i>Clam digging and water access site (story-based)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Lang%20Cove%20(48.4467,%20-123.3145)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_6615b52e5a32351e82c4cbf2171ca74d.setContent(html_ad05f1f54470fa1aed5b7e5d6e722cd8);
+        
+
+        marker_f1b9ec17f7b555cbd4e6635e17924c02.bindPopup(popup_6615b52e5a32351e82c4cbf2171ca74d)
+        ;
+
+        
+    
+    
+            var marker_98a699866186b8ac479de474f13c15c9 = L.marker(
+                [48.4233, -123.308],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_791c47d2c6d6cd8b069a80e3ca78715c = L.popup({"maxWidth": 300});
+
+        
+            var html_4e0c83f1b50c274b1f769b10168b1c4f = $(`<div id="html_4e0c83f1b50c274b1f769b10168b1c4f" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Foul Bay</b><br>         <i>Women’s bathing and healing site (Elder story)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Foul%20Bay%20(48.4233,%20-123.308)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_791c47d2c6d6cd8b069a80e3ca78715c.setContent(html_4e0c83f1b50c274b1f769b10168b1c4f);
+        
+
+        marker_98a699866186b8ac479de474f13c15c9.bindPopup(popup_791c47d2c6d6cd8b069a80e3ca78715c)
+        ;
+
+        
+    
+    
+            var marker_fe5e6c464a0467dfcfc6b5bb97919f3c = L.marker(
+                [48.4042, -123.3172],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_64c60abfe99d8e5def74c5f95f97c4a8 = L.popup({"maxWidth": 300});
+
+        
+            var html_d870ea0c0f32c45339a60b0ae40c5f67 = $(`<div id="html_d870ea0c0f32c45339a60b0ae40c5f67" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Harling Point</b><br>         <i>Burial cairns and spiritual power place (heritage file)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Harling%20Point%20(48.4042,%20-123.3172)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_64c60abfe99d8e5def74c5f95f97c4a8.setContent(html_d870ea0c0f32c45339a60b0ae40c5f67);
+        
+
+        marker_fe5e6c464a0467dfcfc6b5bb97919f3c.bindPopup(popup_64c60abfe99d8e5def74c5f95f97c4a8)
+        ;
+
+        
+    
+    
+            var marker_42827fc8edeb983be1389a2300781d04 = L.marker(
+                [48.5234, -123.5051],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_be9a253d18279c09247ec62cfaad6bfc = L.popup({"maxWidth": 300});
+
+        
+            var html_569084f33f3ee74901e751e9c41b475b = $(`<div id="html_569084f33f3ee74901e751e9c41b475b" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Mount Work</b><br>         <i>Hunting trail convergence point (W̱SÁNEĆ path systems)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Mount%20Work%20(48.5234,%20-123.5051)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_be9a253d18279c09247ec62cfaad6bfc.setContent(html_569084f33f3ee74901e751e9c41b475b);
+        
+
+        marker_42827fc8edeb983be1389a2300781d04.bindPopup(popup_be9a253d18279c09247ec62cfaad6bfc)
+        ;
+
+        
+    
+    
+            var marker_1a2b7327382a54bfcc387bdae95a391e = L.marker(
+                [48.5891, -123.3798],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_b8ccd5b9a1c0ba9a7a48b1be3920df0a = L.popup({"maxWidth": 300});
+
+        
+            var html_352678ea57ce7b5a73c300200e18496e = $(`<div id="html_352678ea57ce7b5a73c300200e18496e" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Island View Beach</b><br>         <i>Fishing and gathering site with reef access</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Island%20View%20Beach%20(48.5891,%20-123.3798)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_b8ccd5b9a1c0ba9a7a48b1be3920df0a.setContent(html_352678ea57ce7b5a73c300200e18496e);
+        
+
+        marker_1a2b7327382a54bfcc387bdae95a391e.bindPopup(popup_b8ccd5b9a1c0ba9a7a48b1be3920df0a)
+        ;
+
+        
+    
+    
+            var marker_3391b9066c7014fc2bd167d3075d358f = L.marker(
+                [48.5071, -123.3294],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_0604d1fcc0481b239b1abcc31ec73afa = L.popup({"maxWidth": 300});
+
+        
+            var html_4271785a765aa46c58ac486a53e154cd = $(`<div id="html_4271785a765aa46c58ac486a53e154cd" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Cordova Bay</b><br>         <i>Longhouse and seasonal camp (historical info)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Cordova%20Bay%20(48.5071,%20-123.3294)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_0604d1fcc0481b239b1abcc31ec73afa.setContent(html_4271785a765aa46c58ac486a53e154cd);
+        
+
+        marker_3391b9066c7014fc2bd167d3075d358f.bindPopup(popup_0604d1fcc0481b239b1abcc31ec73afa)
+        ;
+
+        
+    
+    
+            var marker_d4c9f2d6b85279bae4e7aea074705856 = L.marker(
+                [48.4174, -123.3906],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_e9724d8be9b263fff9f4008c4658afca = L.popup({"maxWidth": 300});
+
+        
+            var html_2db8946afe3f680e257c25ceb8acf37a = $(`<div id="html_2db8946afe3f680e257c25ceb8acf37a" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Ogden Point</b><br>         <i>Harbor defense and canoe route entrance (marine story)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Ogden%20Point%20(48.4174,%20-123.3906)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_e9724d8be9b263fff9f4008c4658afca.setContent(html_2db8946afe3f680e257c25ceb8acf37a);
+        
+
+        marker_d4c9f2d6b85279bae4e7aea074705856.bindPopup(popup_e9724d8be9b263fff9f4008c4658afca)
+        ;
+
+        
+    
+    
+            var marker_6ab7aadce006aabe87ccb9b3ea4e3e76 = L.marker(
+                [48.4138, -123.3747],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_0d85731d6ae1c2578a677e1c4c20b6a3 = L.popup({"maxWidth": 300});
+
+        
+            var html_dadcffb970386f197cf27d9918806be2 = $(`<div id="html_dadcffb970386f197cf27d9918806be2" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Holland Point Park</b><br>         <i>Shoreline stories and healing practices (Elder oral info)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Holland%20Point%20Park%20(48.4138,%20-123.3747)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_0d85731d6ae1c2578a677e1c4c20b6a3.setContent(html_dadcffb970386f197cf27d9918806be2);
+        
+
+        marker_6ab7aadce006aabe87ccb9b3ea4e3e76.bindPopup(popup_0d85731d6ae1c2578a677e1c4c20b6a3)
+        ;
+
+        
+    
+    
+            var marker_dc3f1b7555043c1f28c1370f12a4c08b = L.marker(
+                [48.4293, -123.4567],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_454446d15e5d25a13e98523ada1148a2 = L.popup({"maxWidth": 300});
+
+        
+            var html_74331df1cbb5fdb527c059334fdb2c46 = $(`<div id="html_74331df1cbb5fdb527c059334fdb2c46" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Fort Rodd Hill</b><br>         <i>Historic fort and lighthouse with traditional territory link</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Fort%20Rodd%20Hill%20(48.4293,%20-123.4567)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_454446d15e5d25a13e98523ada1148a2.setContent(html_74331df1cbb5fdb527c059334fdb2c46);
+        
+
+        marker_dc3f1b7555043c1f28c1370f12a4c08b.bindPopup(popup_454446d15e5d25a13e98523ada1148a2)
+        ;
+
+        
+    
+    
+            var marker_48e231aa5ac762da81b8aa2097c839f0 = L.marker(
+                [48.4395, -123.3924],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_b2718c965e0f6d545c82edb03240066c = L.popup({"maxWidth": 300});
+
+        
+            var html_2d421b4a123d6b91218e3416ae118160 = $(`<div id="html_2d421b4a123d6b91218e3416ae118160" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Highrock Park</b><br>         <i>Lookout point and seasonal camp (oral tradition)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Highrock%20Park%20(48.4395,%20-123.3924)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_b2718c965e0f6d545c82edb03240066c.setContent(html_2d421b4a123d6b91218e3416ae118160);
+        
+
+        marker_48e231aa5ac762da81b8aa2097c839f0.bindPopup(popup_b2718c965e0f6d545c82edb03240066c)
+        ;
+
+        
+    
+    
+            var marker_d169c4206763054e3fb870be07738532 = L.marker(
+                [48.4511, -123.2882],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_201df18bab44a07219e6577d2d0c7623 = L.popup({"maxWidth": 300});
+
+        
+            var html_77903b82d517b14180b31952dcf2194e = $(`<div id="html_77903b82d517b14180b31952dcf2194e" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Ten Mile Point</b><br>         <i>Landing and lookout site (traditional knowledge)</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Ten%20Mile%20Point%20(48.4511,%20-123.2882)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_201df18bab44a07219e6577d2d0c7623.setContent(html_77903b82d517b14180b31952dcf2194e);
+        
+
+        marker_d169c4206763054e3fb870be07738532.bindPopup(popup_201df18bab44a07219e6577d2d0c7623)
+        ;
+
+        
+    
+    
+            var marker_62444de3c9a1a4d4a7c6daec57905e34 = L.marker(
+                [48.5387, -123.4804],
+                {}
+            ).addTo(marker_cluster_006393d88ab83e0d544c2dd39a2be71e);
+        
+    
+        var popup_6b6d64d6d7c9dcd1db0e0ab77980f4fb = L.popup({"maxWidth": 300});
+
+        
+            var html_d95034d08775bd19f877384389a0d3a3 = $(`<div id="html_d95034d08775bd19f877384389a0d3a3" style="width: 100.0%; height: 100.0%;">     <div style="width: 260px;">         <b>Tod Inlet</b><br>         <i>Sacred inlet with cultural and spiritual meaning</i><br>         <a href="https://www.perplexity.ai/search?q=Tell%20me%20a%20short%20Indigenous%20story%20about%20Tod%20Inlet%20(48.5387,%20-123.4804)%20in%20British%20Columbia,%20Canada." target="_blank">🔍 Find a cultural story about this place</a>     </div>     </div>`)[0];
+            popup_6b6d64d6d7c9dcd1db0e0ab77980f4fb.setContent(html_d95034d08775bd19f877384389a0d3a3);
+        
+
+        marker_62444de3c9a1a4d4a7c6daec57905e34.bindPopup(popup_6b6d64d6d7c9dcd1db0e0ab77980f4fb)
+        ;
+
+        
+    
+</script>
+</html>
